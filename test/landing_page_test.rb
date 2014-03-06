@@ -26,7 +26,6 @@ describe "Landing page" do
   end
 
   it "displays a list of names for 5 dishes" do
-    skip
     dishes = page.all('html body main ul li')
     dishes.length.must_equal 5
 
@@ -36,7 +35,6 @@ describe "Landing page" do
   end
 
   it "displays the restaurant address in the footer" do
-    skip
     address = page.find('html body footer address')
     address.text.wont_equal ''
   end
